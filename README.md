@@ -32,4 +32,5 @@ This project demonstrates API testing of the Trello REST API using Postman.
 - Excel planning sheet
 - Postman collection export
 - Postman environment export
+- Postman test run result export
 - Screenshots of execution
