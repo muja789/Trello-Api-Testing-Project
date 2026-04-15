@@ -1,0 +1,883 @@
+{
+	"id": "9328e508-85d8-4996-a4d6-647f344ffbba",
+	"name": "Trello API Testing Project",
+	"timestamp": "2026-04-15T13:30:46.524Z",
+	"collection_id": "53940996-b46620fc-b30a-4194-8e19-f9e56a4ee1fa",
+	"folder_id": 0,
+	"environment_id": "53940996-66bd7b92-b4aa-42bd-a33b-20de28598f33",
+	"totalPass": 56,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-04-15T13:30:32.222Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2f03b3b4-c454-4c24-93e1-3af8ba536837",
+			"name": "Get Member Profile",
+			"url": "https://api.trello.com/1/members/me?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 783,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validate user profile response fields": true,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate user profile response fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				783
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validate user profile response fields": true,
+					"Response time is less than 1000ms": true
+				}
+			]
+		},
+		{
+			"id": "60441656-742f-4f8e-96d2-c6adc755a357",
+			"name": "Create board",
+			"url": "https://api.trello.com/1/boards?name=my_board&key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 782,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Board ID saved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board ID saved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				782
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Board ID saved": true
+				}
+			]
+		},
+		{
+			"id": "519094f3-2e18-4f7b-b902-20fcbc1d3046",
+			"name": "Get board",
+			"url": "https://api.trello.com/1/boards/69df92fa911b28745a8b5ae8?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 422,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Board name is correct": true,
+				"Board id matched": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board name is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board id matched": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				422
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Board name is correct": true,
+					"Board id matched": true
+				}
+			]
+		},
+		{
+			"id": "e820fffc-5198-48f9-8ee4-6dd480a8f717",
+			"name": "Update board",
+			"url": "https://api.trello.com/1/boards/69df92fa911b28745a8b5ae8?name=Updated My Board&key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 580,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Board Updated Successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board Updated Successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				580
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Board Updated Successfully": true
+				}
+			]
+		},
+		{
+			"id": "7d783679-0864-439a-9eff-3ab5689a3f7d",
+			"name": "Create List",
+			"url": "https://api.trello.com/1/lists?name=my_list&idBoard=69df92fa911b28745a8b5ae8&key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 477,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"List ID saved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List ID saved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				477
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"List ID saved": true
+				}
+			]
+		},
+		{
+			"id": "69e1afda-768b-45d0-8d01-442916348aaa",
+			"name": "Get list",
+			"url": "https://api.trello.com/1/lists/69df92fc0dc9b993462e6d33?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 396,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"List name is correct": true,
+				"List id matched": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List name is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List id matched": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				396
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"List name is correct": true,
+					"List id matched": true
+				}
+			]
+		},
+		{
+			"id": "3036ce63-3d50-4aaa-a21e-013a4faf149f",
+			"name": "Update list",
+			"url": "https://api.trello.com/1/lists/69df92fc0dc9b993462e6d33?name=Updated My List&key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 466,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"List Updated Successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List Updated Successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				466
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"List Updated Successfully": true
+				}
+			]
+		},
+		{
+			"id": "74f80847-fb9d-4bb9-a026-d13e4c0a94ae",
+			"name": "Create Card",
+			"url": "https://api.trello.com/1/cards?idList=69df92fc0dc9b993462e6d33&name=my_card&desc=Created from Postman&key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 577,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Card ID saved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card ID saved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				577
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Card ID saved": true
+				}
+			]
+		},
+		{
+			"id": "83feeca3-18d2-4005-86a1-bd633d2f0297",
+			"name": "Get card",
+			"url": "https://api.trello.com/1/cards/69df92fea4c72d1e34aa4f9f?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 411,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Card name is correct": true,
+				"Card id matched": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card name is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card id matched": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				411
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Card name is correct": true,
+					"Card id matched": true
+				}
+			]
+		},
+		{
+			"id": "24d665d3-bf9b-4609-a247-ffcd9bdcb88d",
+			"name": "Update card",
+			"url": "https://api.trello.com/1/card/69df92fea4c72d1e34aa4f9f?name=Updated My Card&key=TRELLO_KEY&token=TRELLO_TOKEN&desc=Updated from Postman",
+			"time": 737,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Card Updated Successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card Updated Successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				737
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Card Updated Successfully": true
+				}
+			]
+		},
+		{
+			"id": "dd64484d-4f2e-4693-a02d-eba880a5e9fd",
+			"name": "Create Checklist",
+			"url": "https://api.trello.com/1/checklists?idCard=69df92fea4c72d1e34aa4f9f&name=my_checklist&key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 510,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Checklist ID saved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checklist ID saved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				510
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Checklist ID saved": true
+				}
+			]
+		},
+		{
+			"id": "050d6c52-282c-46e4-ab76-d3dd9da6011d",
+			"name": "Get Checklist",
+			"url": "https://api.trello.com/1/checklists/69df930063ef9773890ed724?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 539,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Checklist name is correct": true,
+				"Checklist id matched": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checklist name is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checklist id matched": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				539
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Checklist name is correct": true,
+					"Checklist id matched": true
+				}
+			]
+		},
+		{
+			"id": "a1612817-16d7-47ba-a82e-0d191242e05e",
+			"name": "Update Checklist",
+			"url": "https://api.trello.com/1/checklist/69df930063ef9773890ed724?name=Updated My Checklist&key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 472,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"Checklist Updated Successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checklist Updated Successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				472
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"Checklist Updated Successfully": true
+				}
+			]
+		},
+		{
+			"id": "bc93f676-301f-4d57-9e48-52a7b719d752",
+			"name": "Delete Checklist",
+			"url": "https://api.trello.com/1/checklists/69df930063ef9773890ed724?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 676,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				676
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true
+				}
+			]
+		},
+		{
+			"id": "62c92b63-3db9-4a4f-ab74-43b3a8db4410",
+			"name": "Verify Checklist Deletion",
+			"url": "https://api.trello.com/1/checklists/69df930063ef9773890ed724?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 414,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Checklist deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Checklist deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				414
+			],
+			"allTests": [
+				{
+					"Checklist deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "53e3ec47-fe85-48c0-b6b4-d4bde900f9f0",
+			"name": "Delete Card",
+			"url": "https://api.trello.com/1/cards/69df92fea4c72d1e34aa4f9f?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 527,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				527
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true
+				}
+			]
+		},
+		{
+			"id": "2c7b1590-9211-41bd-b7b2-b743fc4facbe",
+			"name": "Verify Card Deletion",
+			"url": "https://api.trello.com/1/cards/69df92fea4c72d1e34aa4f9f?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 397,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Card deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Card deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				397
+			],
+			"allTests": [
+				{
+					"Card deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "5f5cd19e-e2ca-4fd9-a49e-daff92b0935e",
+			"name": "Archive List",
+			"url": "https://api.trello.com/1/lists/69df92fc0dc9b993462e6d33?key=TRELLO_KEY&token=TRELLO_TOKEN&closed=true",
+			"time": 473,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true,
+				"List is archived": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List is archived": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				473
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true,
+					"List is archived": true
+				}
+			]
+		},
+		{
+			"id": "1ff9ca3f-f3b4-4c0e-a743-ab688adb5b78",
+			"name": "Verify List Archived",
+			"url": "https://api.trello.com/1/lists/69df92fc0dc9b993462e6d33?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 431,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"List is accessible but Archived": true
+			},
+			"testPassFailCounts": {
+				"List is accessible but Archived": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				431
+			],
+			"allTests": [
+				{
+					"List is accessible but Archived": true
+				}
+			]
+		},
+		{
+			"id": "f5a5ebdb-e85a-4c48-89ef-89225fa34415",
+			"name": "Delete Board",
+			"url": "https://api.trello.com/1/boards/69df92fa911b28745a8b5ae8?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 1470,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1470
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3000ms": true
+				}
+			]
+		},
+		{
+			"id": "cec11697-96c8-4664-b959-a836cf397dbb",
+			"name": "Verify Board Deletion",
+			"url": "https://api.trello.com/1/boards/69df92fa911b28745a8b5ae8?key=TRELLO_KEY&token=TRELLO_TOKEN",
+			"time": 418,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Board deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Board deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				418
+			],
+			"allTests": [
+				{
+					"Board deleted successfully": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 11958,
+	"collection": {
+		"requests": [
+			{
+				"id": "2f03b3b4-c454-4c24-93e1-3af8ba536837",
+				"method": "GET"
+			},
+			{
+				"id": "60441656-742f-4f8e-96d2-c6adc755a357",
+				"method": "POST"
+			},
+			{
+				"id": "519094f3-2e18-4f7b-b902-20fcbc1d3046",
+				"method": "GET"
+			},
+			{
+				"id": "e820fffc-5198-48f9-8ee4-6dd480a8f717",
+				"method": "PUT"
+			},
+			{
+				"id": "7d783679-0864-439a-9eff-3ab5689a3f7d",
+				"method": "POST"
+			},
+			{
+				"id": "69e1afda-768b-45d0-8d01-442916348aaa",
+				"method": "GET"
+			},
+			{
+				"id": "3036ce63-3d50-4aaa-a21e-013a4faf149f",
+				"method": "PUT"
+			},
+			{
+				"id": "74f80847-fb9d-4bb9-a026-d13e4c0a94ae",
+				"method": "POST"
+			},
+			{
+				"id": "83feeca3-18d2-4005-86a1-bd633d2f0297",
+				"method": "GET"
+			},
+			{
+				"id": "24d665d3-bf9b-4609-a247-ffcd9bdcb88d",
+				"method": "PUT"
+			},
+			{
+				"id": "dd64484d-4f2e-4693-a02d-eba880a5e9fd",
+				"method": "POST"
+			},
+			{
+				"id": "050d6c52-282c-46e4-ab76-d3dd9da6011d",
+				"method": "GET"
+			},
+			{
+				"id": "a1612817-16d7-47ba-a82e-0d191242e05e",
+				"method": "PUT"
+			},
+			{
+				"id": "bc93f676-301f-4d57-9e48-52a7b719d752",
+				"method": "DELETE"
+			},
+			{
+				"id": "62c92b63-3db9-4a4f-ab74-43b3a8db4410",
+				"method": "GET"
+			},
+			{
+				"id": "53e3ec47-fe85-48c0-b6b4-d4bde900f9f0",
+				"method": "DELETE"
+			},
+			{
+				"id": "2c7b1590-9211-41bd-b7b2-b743fc4facbe",
+				"method": "GET"
+			},
+			{
+				"id": "5f5cd19e-e2ca-4fd9-a49e-daff92b0935e",
+				"method": "PUT"
+			},
+			{
+				"id": "1ff9ca3f-f3b4-4c0e-a743-ab688adb5b78",
+				"method": "GET"
+			},
+			{
+				"id": "f5a5ebdb-e85a-4c48-89ef-89225fa34415",
+				"method": "DELETE"
+			},
+			{
+				"id": "cec11697-96c8-4664-b959-a836cf397dbb",
+				"method": "GET"
+			}
+		]
+	}
+}
